@@ -64,13 +64,15 @@ namespace EmployeeManagement
             services.AddAuthentication()
                 .AddGoogle(options =>
                 {
-                    options.ClientId = "438011275394-9apsul86npk93tcc68vjkikunoteied8.apps.googleusercontent.com";
-                    options.ClientSecret = "Z6X83TAEKxrTi8aBCeGfC7_R";
+                    //Add your g google Client Id and secret before proceeding
+                    options.ClientId = "";
+                    options.ClientSecret = "";
                 })
                 .AddFacebook(options =>
                 {
-                    options.AppId = "230508134836546";
-                    options.AppSecret = "c385ddb659439e658cf4fe1006f33795";
+                    //Add your facebook app Id and secret before proceeding
+                    options.AppId = "";
+                    options.AppSecret = "";
                 });
 
             services.AddScoped<IEmployeeRepository, SQLEmployeeRepository>();
